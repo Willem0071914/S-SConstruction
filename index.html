@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S&S Construction and Projects | Limpopo</title>
+<meta name="description" content="S&S Construction and Projects — construction, fencing, gates, maintenance, ground works, partitioning and ceilings in Limpopo.">
+<style>
+:root{--orange:#f47b20;--dark:#111315;--dark2:#1b1e21;--light:#f5f5f3;--muted:#b9bec2;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--light);color:#16181a;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(17,19,21,.96);backdrop-filter:blur(10px);border-bottom:1px solid #303337}
+.nav{max-width:1150px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;font-size:25px;letter-spacing:-1px;color:#fff}.logo span{color:var(--orange)}
+nav{display:flex;gap:25px;color:#ddd;font-weight:700;font-size:14px}
+nav a:hover{color:var(--orange)}
+.menu{display:none;background:none;border:0;color:#fff;font-size:27px}
+.hero{min-height:100vh;background:linear-gradient(115deg,rgba(12,14,16,.96),rgba(12,14,16,.72)),linear-gradient(135deg,#25292d,#0f1012);display:flex;align-items:center;color:#fff;padding:130px 22px 70px;position:relative;overflow:hidden}
+.hero:after{content:"S&S";position:absolute;right:-50px;bottom:-130px;font-size:350px;font-weight:900;color:rgba(244,123,32,.05)}
+.hero-inner{max-width:1150px;width:100%;margin:auto;position:relative;z-index:2}
+.badge{display:inline-block;color:var(--orange);border:1px solid rgba(244,123,32,.5);padding:7px 13px;border-radius:30px;font-size:12px;font-weight:800;letter-spacing:1px;margin-bottom:22px}
+h1{font-size:clamp(44px,7vw,78px);line-height:.98;max-width:850px;letter-spacing:-3px}
+h1 span{color:var(--orange)}
+.hero p{max-width:650px;color:#d1d4d6;font-size:19px;margin:25px 0 32px}
+.buttons{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 21px;border-radius:6px;font-weight:800;transition:.25s}
+.btn-primary{background:var(--orange);color:#111}.btn-primary:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn-outline{border:1px solid #666;color:#fff}.btn-outline:hover{border-color:var(--orange);color:var(--orange)}
+.contact-strip{background:var(--orange);color:#111;padding:17px 22px}
+.contact-inner{max-width:1150px;margin:auto;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-weight:800}
+section{padding:90px 22px}
+.container{max-width:1150px;margin:auto}
+.section-head{margin-bottom:45px}
+.eyebrow{color:var(--orange);font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:1.5px}
+h2{font-size:42px;line-height:1.05;margin:8px 0 12px;letter-spacing:-1px}
+.section-head p{color:#666;max-width:650px}
+.services{background:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.card{background:#f3f3f1;border:1px solid #e4e4e0;padding:27px;min-height:190px;border-radius:9px;transition:.3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,.08)}
+.icon{width:45px;height:45px;border-radius:8px;background:#111315;color:var(--orange);display:grid;place-items:center;font-weight:900;font-size:19px;margin-bottom:22px}
+.card h3{font-size:19px;margin-bottom:7px}.card p{font-size:14px;color:#707070}
+.projects{background:var(--dark);color:#fff}
+.projects .section-head p{color:#b9bec2}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.project{height:270px;border-radius:9px;overflow:hidden;background:linear-gradient(135deg,#3a3d40,#17191b);position:relative;border:1px solid #35383b}
+.project:before{content:"PROJECT PHOTO";position:absolute;inset:0;display:grid;place-items:center;color:#777;font-size:13px;font-weight:900;letter-spacing:2px}
+.project div{position:absolute;bottom:0;left:0;right:0;padding:18px;background:linear-gradient(transparent,rgba(0,0,0,.9));z-index:2;font-weight:800}
+.quote{background:#f0f0ed}
+.quote-box{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:start}
+.quote-info{background:var(--dark);color:#fff;border-radius:10px;padding:35px}
+.quote-info h3{font-size:28px;margin-bottom:12px}.quote-info p{color:#bbb;margin-bottom:24px}
+.details{display:grid;gap:12px}.details div{padding:13px 0;border-bottom:1px solid #34383b;color:#ddd}
+form{background:#fff;padding:30px;border-radius:10px;border:1px solid #ddd;box-shadow:0 12px 35px rgba(0,0,0,.06)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+label{font-size:13px;font-weight:800;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;border:1px solid #d6d6d2;border-radius:6px;padding:13px;font:inherit;outline:none;background:#fafaf8}
+input:focus,select:focus,textarea:focus{border-color:var(--orange)}
+.full{grid-column:1/-1}textarea{min-height:135px;resize:vertical}
+footer{background:#0d0f10;color:#aaa;padding:35px 22px}.footer-inner{max-width:1150px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer strong{color:#fff}
+.reveal{animation:up .7s ease both}@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media(max-width:800px){
+nav{display:none;position:absolute;top:64px;left:0;right:0;background:#111315;padding:18px 22px;flex-direction:column;gap:16px}
+nav.open{display:flex}.menu{display:block}
+.grid{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr}.quote-box{grid-template-columns:1fr}
+}
+@media(max-width:520px){
+section{padding:65px 18px}h2{font-size:34px}.grid,.gallery,.form-grid{grid-template-columns:1fr}
+.hero{padding-left:18px;padding-right:18px}.hero p{font-size:17px}.contact-inner{font-size:13px}
+.project{height:220px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<a class="logo" href="#home">S<span>&</span>S</a>
+<button class="menu" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav>
+<a href="#home">Home</a><a href="#services">What We Do</a><a href="#projects">Projects</a><a href="#quote">Get a Quote</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-inner reveal">
+<div class="badge">CONSTRUCTION • MAINTENANCE • PROJECTS</div>
+<h1>Built right.<br><span>Built to last.</span></h1>
+<p>S&S Construction and Projects provides professional construction, fencing, gates, maintenance and project services across Limpopo.</p>
+<div class="buttons">
+<a class="btn btn-primary" href="#quote">Request a Quotation →</a>
+<a class="btn btn-outline" href="#services">Explore Our Services</a>
+</div>
+</div>
+</section>
+
+<div class="contact-strip"><div class="contact-inner">
+<span>📍 Limpopo</span><span>☎ 072 151 7269</span><span>☎ 065 339 5083</span><span>✉ ssconstructprojects@gmail.com</span>
+</div></div>
+
+<section class="services" id="services">
+<div class="container">
+<div class="section-head"><div class="eyebrow">What we do</div><h2>Professional work. Practical solutions.</h2><p>From new construction to everyday maintenance, we help turn your project into a finished result you can be proud of.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">01</div><h3>Construction</h3><p>Quality building and construction work for residential and commercial projects.</p></div>
+<div class="card"><div class="icon">02</div><h3>Electric Fencing</h3><p>Security-focused electric fencing installation and project work.</p></div>
+<div class="card"><div class="icon">03</div><h3>Gates & Gate Motors</h3><p>Gate installation, upgrades and gate motor projects.</p></div>
+<div class="card"><div class="icon">04</div><h3>General Maintenance</h3><p>Reliable maintenance and repairs to keep properties in good condition.</p></div>
+<div class="card"><div class="icon">05</div><h3>Ground Works</h3><p>Site preparation and practical groundwork for construction projects.</p></div>
+<div class="card"><div class="icon">06</div><h3>Partitioning & Ceilings</h3><p>Clean interior partitioning and ceiling solutions for your space.</p></div>
+<div class="card"><div class="icon">07</div><h3>General Fencing</h3><p>Fencing solutions designed around your property's needs.</p></div>
+<div class="card"><div class="icon">08</div><h3>Project Support</h3><p>Professional project assistance from planning through completion.</p></div>
+</div>
+</div>
+</section>
+
+<section class="projects" id="projects">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Our projects</div><h2>Work that speaks for itself.</h2><p>Add your completed project photos here to create a strong visual portfolio for future clients.</p></div>
+<div class="gallery">
+<div class="project"><div>Construction Project</div></div>
+<div class="project"><div>Fencing & Security</div></div>
+<div class="project"><div>Gate Installation</div></div>
+<div class="project"><div>Maintenance Project</div></div>
+<div class="project"><div>Ground Works</div></div>
+<div class="project"><div>Interior Project</div></div>
+</div>
+</div>
+</section>
+
+<section class="quote" id="quote">
+<div class="container">
+<div class="section-head"><div class="eyebrow">Get in touch</div><h2>Request a quotation.</h2><p>Tell us what you need and we'll get back to you to discuss your project.</p></div>
+<div class="quote-box">
+<div class="quote-info"><h3>Let's build something.</h3><p>Contact S&S Construction and Projects for your next construction or maintenance project in Limpopo.</p>
+<div class="details"><div>📞 072 151 7269</div><div>📞 065 339 5083</div><div>✉ ssconstructprojects@gmail.com</div><div>📍 Limpopo, South Africa</div></div></div>
+<form onsubmit="sendQuote(event)">
+<div class="form-grid">
+<div><label for="name">Name *</label><input id="name" required></div>
+<div><label for="phone">Phone *</label><input id="phone" type="tel" required></div>
+<div><label for="email">Email</label><input id="email" type="email"></div>
+<div><label for="service">Service required *</label><select id="service" required><option value="">Select a service</option><option>Construction</option><option>Electric Fencing</option><option>Gates & Gate Motors</option><option>General Maintenance</option><option>Ground Works</option><option>Partitioning & Ceilings</option><option>General Fencing</option><option>Other</option></select></div>
+<div class="full"><label for="description">Project description *</label><textarea id="description" required placeholder="Tell us a little about the work you need..."></textarea></div>
+<div><label for="contact">Preferred contact method</label><select id="contact"><option>Phone</option><option>WhatsApp</option><option>Email</option></select></div>
+<div style="display:flex;align-items:end"><button class="btn btn-primary" type="submit" style="border:0;cursor:pointer;width:100%">Send Quote Request →</button></div>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="footer-inner"><div><strong>S&S Construction and Projects</strong><br>Limpopo, South Africa</div><div>072 151 7269 • 065 339 5083<br>ssconstructprojects@gmail.com</div></div></footer>
+
+<script>
+function sendQuote(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value, phone=document.getElementById('phone').value,
+ email=document.getElementById('email').value, service=document.getElementById('service').value,
+ desc=document.getElementById('description').value, contact=document.getElementById('contact').value;
+ const subject=encodeURIComponent("Quotation Request - "+service);
+ const body=encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nService: ${service}\nPreferred contact: ${contact}\n\nProject description:\n${desc}`);
+ window.location.href=`mailto:ssconstructprojects@gmail.com?subject=${subject}&body=${body}`;
+}
+</script>
+</body>
+</html>
