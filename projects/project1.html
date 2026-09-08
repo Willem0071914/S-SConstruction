@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Project 1 | S&S Construction and Projects</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #102f5f;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 25px 20px;
+      text-align: center;
+      border-bottom: 4px solid #f36c0a;
+    }
+
+    .logo-text {
+      font-size: 32px;
+      font-weight: 900;
+      color: #123d78;
+      letter-spacing: 2px;
+    }
+
+    .orange {
+      color: #f36c0a;
+    }
+
+    header p {
+      margin-top: 5px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px 50px;
+    }
+
+    .hero {
+      background: #123d78;
+      color: white;
+      padding: 45px 25px;
+      border-radius: 12px;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      color: #ff7200;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: #123d78;
+      font-size: 30px;
+      margin-bottom: 15px;
+      border-left: 6px solid #f36c0a;
+      padding-left: 12px;
+    }
+
+    section p {
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .project-info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .info-box {
+      background: #f4f6f8;
+      padding: 20px;
+      border-left: 4px solid #f36c0a;
+      border-radius: 6px;
+    }
+
+    .info-box strong {
+      display: block;
+      color: #123d78;
+      margin-bottom: 5px;
+    }
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .photo {
+      min-height: 180px;
+      background: #e9edf2;
+      border: 2px dashed #9aa5b1;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #687585;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 30px;
+      margin-top: 20px;
+    }
+
+    .services div {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .services div::before {
+      content: "✓";
+      color: #f36c0a;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .contact {
+      background: #123d78;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+      border-radius: 12px;
+    }
+
+    .contact h2 {
+      color: white;
+      border: none;
+      padding: 0;
+    }
+
+    .phone {
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    .back {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .back a {
+      display: inline-block;
+      background: #f36c0a;
+      color: white;
+      text-decoration: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .back a:hover {
+      background: #123d78;
+    }
+
+    footer {
+      background: #0d2d59;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .project-info,
+      .photos,
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      .phone {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo-text">
+      S<span class="orange">&</span>S
+    </div>
+
+    <h1>CONSTRUCTION AND PROJECTS</h1>
+
+    <p>(PTY) LTD</p>
+  </header>
+
+
+  <main>
+
+    <div class="hero">
+      <h1>PROJECT 1</h1>
+      <h2>BUILDING TOMORROW, DELIVERING TODAY.</h2>
+
+      <p>
+        Professional construction and project services delivered
+        with quality, reliability and attention to detail.
+      </p>
+    </div>
+
+
+    <section>
+      <h2>Project Overview</h2>
+
+      <p>
+        Welcome to Project 1 by S&S Construction and Projects.
+        This project showcases our commitment to professional
+        construction, quality workmanship and reliable project
+        delivery.
+      </p>
+
+      <div class="project-info">
+
+        <div class="info-box">
+          <strong>Project</strong>
+          Project 1
+        </div>
+
+        <div class="info-box">
+          <strong>Company</strong>
+          S&S Construction and Projects (Pty) Ltd
+        </div>
+
+        <div class="info-box">
+          <strong>Services</strong>
+          Construction and Project Services
+        </div>
+
+        <div class="info-box">
+          <strong>Quality</strong>
+          Professional Workmanship
+        </div>
+
+      </div>
+    </section>
+
+
+    <section>
+      <h2>Project Gallery</h2>
+
+      <div class="photos">
+
+        <div class="photo">
+          PHOTO 1
+        </div>
+
+        <div class="photo">
+          PHOTO 2
+        </div>
+
+        <div class="photo">
+          PHOTO 3
+        </div>
+
+        <div class="photo">
+          PHOTO 4
+        </div>
+
+        <div class="photo">
+          PHOTO 5
+        </div>
+
+        <div class="photo">
+          PHOTO 6
+        </div>
+
+      </div>
+    </section>
+
+
+    <section>
+      <h2>Services</h2>
+
+      <div class="services">
+
+        <div>Bulk Earthworks</div>
+        <div>General Building</div>
+
+        <div>Formwork / Shuttering</div>
+        <div>Maintenance</div>
+
+        <div>Door Installations</div>
+        <div>Skirtings</div>
+
+        <div>Roofing</div>
+        <div>Plumbing</div>
+
+        <div>Ceiling</div>
+        <div>Painting</div>
+
+        <div>Wendy Houses</div>
+        <div>Roadmarking</div>
+
+        <div>Paving and Kerbs</div>
+        <div>Electric Fence</div>
+
+        <div>Gates and Gate Motors</div>
+
+      </div>
+    </section>
+
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+
+      <p>
+        Contact S&S Construction and Projects for your
+        next construction or maintenance project.
+      </p>
+
+      <div class="phone">
+        072 151 7269
+      </div>
+
+      <div class="phone">
+        065 339 5083
+      </div>
+    </section>
+
+
+    <div class="back">
+      <a href="../projects.html">
+        ← BACK TO PROJECTS
+      </a>
+    </div>
+
+  </main>
+
+
+  <footer>
+    © 2026 S&S Construction and Projects.
+    All Rights Reserved.
+  </footer>
+
+</body>
+</html>
