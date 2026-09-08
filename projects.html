@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | S&S Construction and Projects</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background: #111;
+    padding: 18px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 170px;
+    height: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f58220;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+                url("logo.jpg") center/cover;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.projects-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.section-title span {
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #f58220;
+    margin: auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.12);
+    transition: .3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    height: 220px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 18px;
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-info h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-btn {
+    display: inline-block;
+    background: #f58220;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.project-btn:hover {
+    background: #d96d10;
+}
+
+.cta {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.cta h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+.cta a {
+    display: inline-block;
+    background: #f58220;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+footer {
+    background: #080808;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="index.html">
+            <img src="logo.jpg" class="logo" alt="S&S Construction and Projects">
+        </a>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="index.html#contact">CONTACT</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Our Projects</h1>
+        <p>Quality construction. Built to last.</p>
+    </div>
+</section>
+
+<section class="projects-section">
+
+    <div class="section-title">
+        <h2>Featured Projects</h2>
+        <span></span>
+    </div>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <div class="project-image">
+                PROJECT PHOTO
+            </div>
+
+            <div class="project-info">
+                <h3>Project 1</h3>
+                <p>
+                    View the project description, construction work
+                    completed and project photographs.
+                </p>
+
+                <a href="projects/project1.html" class="project-btn">
+                    VIEW PROJECT
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                PROJECT PHOTO
+            </div>
+
+            <div class="project-info">
+                <h3>Project 2</h3>
+                <p>
+                    View the project description, construction work
+                    completed and project photographs.
+                </p>
+
+                <a href="projects/project2.html" class="project-btn">
+                    VIEW PROJECT
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                PROJECT PHOTO
+            </div>
+
+            <div class="project-info">
+                <h3>Project 3</h3>
+                <p>
+                    View the project description, construction work
+                    completed and project photographs.
+                </p>
+
+                <a href="projects/project3.html" class="project-btn">
+                    VIEW PROJECT
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cta">
+    <h2>Have a Construction Project?</h2>
+    <p>Contact S&S Construction and Projects for a professional quotation.</p>
+    <a href="index.html#contact">GET A QUOTE</a>
+</section>
+
+<footer>
+    © 2026 S&S Construction and Projects. All Rights Reserved.
+</footer>
+
+</body>
+</html>
